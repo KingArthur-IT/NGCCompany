@@ -74,6 +74,15 @@ body {
   text-transform: uppercase;
   color: #fff;
   padding: 30px;
+  -webkit-transition: -webkit-box-shadow .3s ease-in-out;
+  transition: -webkit-box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0px 4px 73px rgba(241, 82, 32, 0.82), inset 0px 0px 31px #FF966B;
+          box-shadow: 0px 4px 73px rgba(241, 82, 32, 0.82), inset 0px 0px 31px #FF966B;
 }
 
 .text {
@@ -631,4 +640,15 @@ body {
 .ceo__item {
   margin-bottom: 20px;
   padding-left: 7px;
+}
+
+.deals {
+  background-color: #fff;
+  padding: 160px 0;
+}
+
+.deals__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #141414;
 }
