@@ -482,6 +482,8 @@ body {
   background-size: cover;
   background-position-x: center;
   margin-top: -60px;
+  margin-bottom: -60px;
+  z-index: 3;
 }
 
 .payments__container {
@@ -538,4 +540,33 @@ body {
       flex-basis: 50%;
   border-left: 1px solid #000;
   padding-left: 26px;
+}
+
+.start {
+  padding: 150px 0;
+  background: url("../assets/start-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.start__title {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 36px;
+  text-transform: uppercase;
+}
+
+.start__title span {
+  color: #FD6D32;
+}
+
+.start__text {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.start__btn {
+  margin: 0 auto;
 }
