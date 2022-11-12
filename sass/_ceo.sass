@@ -1,0 +1,38 @@
+.ceo
+    position: relative
+    background: url("../assets/ceo-bg.jpg") no-repeat
+    background-size: cover
+    background-position-x: center
+    background-position-y: center
+    &::before
+        content: ''
+        background: linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
+        filter: blur(50px)
+        position: absolute
+        top: -100px
+        left: 0
+        right: 0
+        height: 200px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+    &__hero
+        height: 100%
+        padding-top: 80px
+    &__img
+        transform: translateX(-25%)
+    &__title
+        font-size: 109px
+        text-transform: uppercase
+        color: #FFFFFF
+    &__subtitle
+        font-weight: 700
+        color: $primary
+        margin-bottom: 24px        
+    &__list
+        color: #fff
+        list-style: square
+        padding-left: 20px
+    &__item
+        margin-bottom: 20px
+        padding-left: 7px

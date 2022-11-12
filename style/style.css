@@ -570,3 +570,65 @@ body {
 .start__btn {
   margin: 0 auto;
 }
+
+.ceo {
+  position: relative;
+  background: url("../assets/ceo-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.ceo::before {
+  content: '';
+  background: linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 200px;
+}
+
+.ceo__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ceo__hero {
+  height: 100%;
+  padding-top: 80px;
+}
+
+.ceo__img {
+  -webkit-transform: translateX(-25%);
+          transform: translateX(-25%);
+}
+
+.ceo__title {
+  font-size: 109px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.ceo__subtitle {
+  font-weight: 700;
+  color: #FD6D32;
+  margin-bottom: 24px;
+}
+
+.ceo__list {
+  color: #fff;
+  list-style: square;
+  padding-left: 20px;
+}
+
+.ceo__item {
+  margin-bottom: 20px;
+  padding-left: 7px;
+}
