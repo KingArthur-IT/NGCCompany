@@ -2,6 +2,42 @@
     width: 100%
     position: absolute
     top: 0
+    left: 0
+    right: 0
     background: transparent
     z-index: 10
-    
+    padding-top: 50px
+    &__wrap
+        display: flex
+        align-items: center
+    &__logo
+        font-family: 'Intro Black'
+        font-style: normal
+        font-weight: 900
+        font-size: 33px
+        line-height: 1.0
+        color: #FFFFFF
+        margin-right: 194px
+        & span
+            display: block
+            font-family: 'Montserrat', sans-serif
+            font-size: 14px
+            line-height: 1.0
+    &__nav
+        display: flex
+        align-items: center
+    &__nav-item
+        margin-right: 53px
+        & a
+            font-weight: 700
+            color: #FFFFFF
+    &__lang
+        margin-left: auto
+        & a
+            font-weight: 700
+            color: #B7B7B7
+        & span
+            font-weight: 700
+            color: #B7B7B7
+        & a.active
+            color: #fff

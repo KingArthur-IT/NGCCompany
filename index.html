@@ -11,6 +11,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <div class="header__logo">
+                    NGC <span>Company</span>
+                </div>
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <a href="#">Whitepaper</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Academy</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#">Marketplace</a>
+                    </li>
+                </ul>
+                <div class="header__lang">
+                    <a href="#" class="active">EU</a><span>/</span><a href="#">RU</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section baner">
+            <div class="container">
+                <div class="baner__wrap">
+                    <div class="baner__hero">
+                        <h1 class="title baner__title">ДЕНЬГИ ДЕЛАЮТ<span>ДЕНЬГИ</span></h1>
+                        <p class="text baner__text">
+                            Community «NGC» - это персональное сообщество людей, которое поможет развиваться, зарабатывать, достигать целей, и инвестировать своё время с пользой.
+                        </p>
+                        <button class="btn baner__btn">Начать зарабатывать</button>
+                    </div>
+                    <img src="./assets/baner-man.png" alt="man" class="baner__man">
+                </div>
+            </div>
+        </section>
+        <section class="section community">
+            <div class="container">
+                <img src="./assets/phone.png" alt="phone" class="community__phone">
+                <!-- community -->
+                <h2 class="title community__title">Что из себя представляет <span>комьюнити</span> и какие возможности оно дает</h2>
+                <p class="text community__text">
+                    Community «NGC» - это персональное сообщество людей, где вы можете получать исключительно уникальный поэтапный план от крутого наставника и его огромной команды, который поможет развиваться, зарабатывать, достигать целей, и инвестировать своё время с пользой.
+                </p>
+                <p class="text community__text">
+                    Вместе с этим - комьюнити даст возможность знакомства с новыми нашими проектами в будущем, помимо этого, у нас создаётся большая «тусовка» разных людей со всего мира, группа людей имеющая общие интересы, с которыми Вы сможете общаться, партнерится, дружить и вместе двигаться в нашем направлении.
+                </p>
+                <!-- calculator -->
+                <div class="calculator">
+                    <h2 class="title calculator__title">калькулятор</h2>
+                    <h3 class="calculator__subtitle">Выберите сумму инвестиций</h3>
+                    <div class="calculator__hero">
+                        <div class="calculator__resume">
+                            <div class="calculator__resume-row">
+                                <div class="calculator__resume-left">
+                                    <p class="text calculator__summ-title">Сумма инвестиций:</p>
+                                    <p class="calculator__summ" id="investment-value">5200$</p>
+                                </div>
+                                <div class="calculator__resume-right">
+                                    Желаемая сумма инвестиций
+                                </div>
+                            </div>
+                            <div class="calculator__resume-row">
+                                <div class="calculator__resume-left">
+                                    <p class="text calculator__summ-title">Расчетный заработок:</p>
+                                    <p class="calculator__summ">25500$</p>
+                                </div>
+                                <div class="calculator__resume-right">
+                                    Прогнозируемая прибыль
+                                </div>
+                            </div>
+                            <p class="calculator__resume-text">
+                                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                            </p>
+                        </div>
+                        <div class="range">
+                            <div class="range__wrap">
+                                <input type="range" class="range__input" min="100" max="10000" step="100" value="5200">
+                                <div class="range__track">
+                                  <div class="range__track-inner"></div>
+                                </div>
+                                <div class="range__thumb" data-value="5200"></div>
+                            </div>
+                            <div class="range__labels">
+                                <div class="text range__label">100$</div>
+                                <div class="text range__label">10000$</div>
+                            </div>
+                            <p class="text range__text">
+                                После суммы +5000$ сроки выплат - индивидуальны. <br>
+                                За более дательной информацией обращайтесь в телеграмм
+                            </p>
+                            <button class="btn">Начать зарабатывать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const range = document.querySelector('.range__input')
+        const thumb = document.querySelector('.range__thumb')
+        const track = document.querySelector('.range__track-inner')
+        const investmentResume = document.getElementById('investment-value')
+        const minRange = range.getAttribute('min')
+        const maxRange = range.getAttribute('max')
+
+        const updateSlider = (value) => {
+            thumb.style.left = `${value}%`
+            thumb.style.transform = `translate(-${value}%, -50%)`
+            track.style.width = `${value}%`
+        }
+
+        range.oninput = (e) => {
+            updateSlider(100.0 * e.target.value / (maxRange - minRange))
+            thumb.setAttribute('data-value', e.target.value)
+            investmentResume.innerText = `${e.target.value}$`
+        }
+
+        updateSlider(52) // Init value
+    </script>
 </body>
 </html>
