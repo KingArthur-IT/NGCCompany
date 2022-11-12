@@ -226,7 +226,7 @@ body {
   background: url("../assets/community-bg.png") no-repeat;
   background-size: cover;
   background-position-x: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .community__title {
@@ -253,6 +253,30 @@ body {
   height: 930px;
   -webkit-transform: translateX(20%);
           transform: translateX(20%);
+}
+
+.community__small-coin {
+  position: absolute;
+  right: -100px;
+  bottom: 400px;
+  -webkit-filter: drop-shadow(0px 182px 107px rgba(0, 0, 0, 0.46));
+          filter: drop-shadow(0px 182px 107px rgba(0, 0, 0, 0.46));
+  -webkit-transform: rotate(-30.33deg);
+          transform: rotate(-30.33deg);
+  width: 295px;
+  height: 280px;
+}
+
+.community__big-coin {
+  position: absolute;
+  left: -50px;
+  bottom: -100px;
+  -webkit-filter: drop-shadow(0px 182px 107px rgba(0, 0, 0, 0.46));
+          filter: drop-shadow(0px 182px 107px rgba(0, 0, 0, 0.46));
+  width: 495px;
+  height: 470px;
+  -webkit-transform: translate(-60%, 50%) rotate(29.23deg);
+          transform: translate(-60%, 50%) rotate(29.23deg);
 }
 
 .calculator {
@@ -448,4 +472,70 @@ body {
 
 .range__label {
   color: #fff;
+}
+
+.payments {
+  background-color: #fff;
+  color: #141414;
+  padding: 125px 0;
+  background: url("../assets/payments-bg.png") no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  margin-top: -60px;
+}
+
+.payments__container {
+  max-width: 1400px;
+  padding: 0 30px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.payments__img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 50px;
+}
+
+.payments__hero {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.payments__title {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.payments__table {
+  margin-bottom: 42px;
+  border: 1px solid #000000;
+  border-radius: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.payments__left {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.payments__right {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  border-left: 1px solid #000;
+  padding-left: 26px;
 }

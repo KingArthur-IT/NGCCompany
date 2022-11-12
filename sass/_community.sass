@@ -6,7 +6,7 @@
     background: url("../assets/community-bg.png") no-repeat
     background-size: cover
     background-position-x: center
-    overflow-x: hidden
+    overflow: hidden
     &__title
         margin-bottom: 54px
         color: #fff
@@ -24,6 +24,22 @@
         width: 700px
         height: 930px
         transform: translateX(20%)
+    &__small-coin
+        position: absolute
+        right: -100px
+        bottom: 400px
+        filter: drop-shadow(0px 182px 107px rgba(0, 0, 0, 0.46))
+        transform: rotate(-30.33deg)
+        width: 295px
+        height: 280px
+    &__big-coin
+        position: absolute
+        left: -50px
+        bottom: -100px
+        filter: drop-shadow(0px 182px 107px rgba(0, 0, 0, 0.46))
+        width: 495px
+        height: 470px
+        transform: translate(-60%, 50%) rotate(29.23deg)
 .calculator
     margin-top: 320px
     &__title
