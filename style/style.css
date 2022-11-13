@@ -207,6 +207,7 @@ body {
 
 .accordeon {
   margin-bottom: 30px;
+  z-index: 2;
 }
 
 .accordeon__head {
