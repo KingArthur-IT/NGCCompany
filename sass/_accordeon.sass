@@ -1,0 +1,28 @@
+.accordeon
+    margin-bottom: 30px
+    &__head
+        width: 100%
+        background-color: #0F0F0F
+        border-radius: 13px
+        padding: 14px 38px 14px 55px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        cursor: pointer
+        z-index: 2
+        & .line
+            transition: transform .3s ease-out
+            transform-origin: center
+        &.active .line
+            transform: rotate(90deg)
+    &__panel
+        margin-top: -20px
+        background-color: #C8C8C8
+        border-radius: 0 0 13px 13px
+        max-height: 0
+        overflow: hidden
+        transition: max-height 0.2s ease-out
+        & p
+            padding: 60px 55px 38px
+    &__title
+        color: #fff

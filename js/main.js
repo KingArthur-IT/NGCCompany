@@ -20,6 +20,30 @@ range.oninput = (e) => {
 
 updateSlider(52) // Init value
 
+
+//ACCORDEON
+var accordeons = document.querySelectorAll(".accordeon__head");
+
+accordeons.forEach((item, index) => {
+    item.addEventListener("click", () => {
+        item.classList.toggle("active");
+        const panel = item.nextElementSibling;
+        if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+        } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+        };
+
+        //remove from others
+        [...accordeons].filter((el, inx) => inx != index).forEach(element => {
+            element.classList.remove("active");
+            const panel = element.nextElementSibling;
+            panel.style.maxHeight = null;
+        });
+      });
+});
+
+
 //close modal
 // const closeVideoModal = () => {
 //   document.querySelector('.modal__video')?.pause();
