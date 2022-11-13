@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
 </head>
 <body>
     <header class="header">
@@ -172,29 +173,58 @@
         </section>
         <section class="section deals">
             <h2 class="container title deals__title">Наши лучшие сделки</h2>
+            <div class="deals__carousel owl-carousel">
+                <div class="deals__slide">
+                    <div class="deals__item">
+                        <img src="./assets/deals/1-1.jpg" alt="deals">
+                    </div>
+                    <div class="deals__item">
+                        <img src="./assets/deals/1-2.jpg" alt="deals">
+                    </div>
+                </div>
+                <div class="deals__slide">
+                    <div class="deals__item">
+                        <img src="./assets/deals/2-1.jpg" alt="deals">
+                    </div>
+                    <div class="deals__item">
+                        <img src="./assets/deals/2-2.jpg" alt="deals">
+                    </div>
+                </div>
+                <div class="deals__slide">
+                    <div class="deals__item">
+                        <img src="./assets/deals/3-1.jpg" alt="deals">
+                    </div>
+                    <div class="deals__item">
+                        <img src="./assets/deals/3-2.jpg" alt="deals">
+                    </div>
+                </div>
+                <div class="deals__slide">
+                    <div class="deals__item">
+                        <img src="./assets/deals/4-1.jpg" alt="deals">
+                    </div>
+                    <div class="deals__item">
+                        <img src="./assets/deals/4-2.jpg" alt="deals">
+                    </div>
+                </div>
+                <div class="deals__slide"></div>
+            </div>
+            <div class="deals__controls">
+                <button class="deals__carousel-btn deals__left-arrow">
+                    <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.93934 10.9393C0.353553 11.5251 0.353553 12.4749 0.93934 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807614 11.0711 0.807614 10.4853 1.3934L0.93934 10.9393ZM41 10.5L2 10.5L2 13.5L41 13.5L41 10.5Z" fill="white"/>
+                    </svg>                        
+                </button>
+                <button class="deals__carousel-btn deals__right-arrow">
+                    <svg width="41" height="24" viewBox="0 0 41 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40.0607 13.0607C40.6464 12.4749 40.6464 11.5251 40.0607 10.9393L30.5147 1.3934C29.9289 0.807611 28.9792 0.807611 28.3934 1.3934C27.8076 1.97919 27.8076 2.92893 28.3934 3.51472L36.8787 12L28.3934 20.4853C27.8076 21.0711 27.8076 22.0208 28.3934 22.6066C28.9792 23.1924 29.9289 23.1924 30.5147 22.6066L40.0607 13.0607ZM0 13.5H39V10.5H0V13.5Z" fill="white"/>
+                    </svg>                        
+                </button>
+            </div>
         </section>
     </main>
-    <script>
-        const range = document.querySelector('.range__input')
-        const thumb = document.querySelector('.range__thumb')
-        const track = document.querySelector('.range__track-inner')
-        const investmentResume = document.getElementById('investment-value')
-        const minRange = range.getAttribute('min')
-        const maxRange = range.getAttribute('max')
-
-        const updateSlider = (value) => {
-            thumb.style.left = `${value}%`
-            thumb.style.transform = `translate(-${value}%, -50%)`
-            track.style.width = `${value}%`
-        }
-
-        range.oninput = (e) => {
-            updateSlider(100.0 * e.target.value / (maxRange - minRange))
-            thumb.setAttribute('data-value', e.target.value)
-            investmentResume.innerText = `${e.target.value}$`
-        }
-
-        updateSlider(52) // Init value
-    </script>
+    <script src="./js/main.js"></script>
+    <script src="./js/jquery.slim.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/carousel-settings.js"></script>
 </body>
 </html>

@@ -1,7 +1,54 @@
 .deals
     background-color: #fff
     padding: 160px 0
+    background: url("../assets//deals/deals-bg.png") no-repeat
+    background-size: cover
+    background-position-x: center
+    background-position-y: center
+    margin-top: -80px
+    margin-bottom: -80px
+    z-index: 3
     &__title
         text-align: center
         text-transform: uppercase
         color: #141414
+        margin-bottom: 56px
+    &__carousel
+        margin-bottom: 75px
+    &__slide
+        padding: 0 38px 0 0
+    &__item
+        border-radius: 30px
+        overflow: hidden
+        &:first-child
+            margin-bottom: 30px
+        & img
+            height: 100%
+            width: 100%
+    &__controls
+        display: flex
+        justify-content: center
+        align-items: center
+    &__carousel-btn
+        appearance: none
+        border: none
+        display: block
+        cursor: pointer
+        background: #141414
+        border-radius: 14px
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 137px
+        height: 71px
+    &__left-arrow
+        margin-right: 20px
+
+.deals__carousel .owl-stage
+    margin-left: calc(50vw - 660px)
+
+// @media screen and (max-width: 1200px)
+//     .team__list .owl-stage
+//         margin-left: 30px
+//     .dao-list .owl-stage
+//         margin-left: 30px
