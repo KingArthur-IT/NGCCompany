@@ -1,8 +1,10 @@
 .baner
+    position: relative
     min-height: 100vh
     background: url('../assets/baner-bg.jpg') no-repeat
     background-size: cover
     background-position: center
+    overflow: hidden
     &__wrap
         display: flex
         justify-content: space-between
@@ -27,3 +29,17 @@
         height: 100%
         min-height: calc(100vh - 50px)
         transform: translateX(-15%)
+    &__left-corner-anim
+        position: absolute
+        left: 0
+        bottom: 0
+        transform: translate(-40%, 40%)
+        width: 800px
+        height: 800px
+    &__right-corner-anim
+        position: absolute
+        right: 0
+        bottom: 0
+        transform: translate(40%, 40%)
+        width: 800px
+        height: 800px

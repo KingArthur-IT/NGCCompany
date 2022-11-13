@@ -75,6 +75,8 @@ body
   display: none !important
 .no-events
   pointer-events: none
+.overflow-hidden
+  overflow: hidden
 
 // @media screen and (max-width: 1200px)
 //   .title
@@ -88,3 +90,34 @@ body
 // @media screen and (max-width: 425px)
 //   .container
 //     padding: 0 20px
+
+.floating
+  animation: floating 6s linear infinite
+.floating-1
+  animation: floating 5s ease-in infinite
+  animation-delay: 1s
+.floating-2
+  animation: floatingX 8s linear infinite
+.floating-3
+  animation: floating 4s linear infinite
+.floating-4
+  animation: floatingX 5s ease-in-out infinite
+.floating-delay
+  animation-delay: 3s
+  animation-duration: 5.5s
+
+@keyframes floating
+  0%
+      transform: rotate(0deg) translate(0, 0)
+  50%
+      transform: rotate(1deg) translate(0, -20px)
+  100%
+      transform: rotate(0deg) translate(0, 0)
+
+@keyframes floatingX
+  0%
+      transform: rotate(0deg) translate(0, 0)
+  50%
+      transform: rotate(4deg) translate(20px, 5px)
+  100%
+      transform: rotate(0deg) translate(0, 0)
