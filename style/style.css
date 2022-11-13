@@ -724,3 +724,163 @@ body {
 .deals__carousel .owl-stage {
   margin-left: calc(50vw - 660px);
 }
+
+.reviews {
+  background: url("../assets/reviews-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  padding: 160px 0;
+}
+
+.reviews__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+
+.reviews__carousel {
+  margin-bottom: 75px;
+}
+
+.reviews__slide {
+  padding: 0 38px 0 0;
+}
+
+.reviews__item {
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.reviews__item:first-child {
+  margin-bottom: 30px;
+}
+
+.reviews__item img {
+  height: 100%;
+  width: 100%;
+}
+
+.reviews__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reviews__carousel-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 137px;
+  height: 71px;
+}
+
+.reviews__left-arrow {
+  margin-right: 20px;
+}
+
+.reviews__carousel .owl-stage {
+  margin-left: calc(50vw - 660px);
+}
+
+.telegram {
+  background-color: #141414;
+  position: relative;
+}
+
+.telegram::before {
+  content: '';
+  background: linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #141414 95.09%);
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  position: absolute;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 200px;
+}
+
+.telegram__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.telegram__hero {
+  margin-right: 40px;
+  padding-top: 60px;
+}
+
+.telegram__title {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 550px;
+  margin-bottom: 32px;
+}
+
+.telegram__text {
+  color: #fff;
+  margin-bottom: 55px;
+  max-width: 450px;
+}
+
+.telegram__phone {
+  position: relative;
+}
+
+.telegram__phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../assets/telegram/light.png") no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 600px;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+}
+
+.telegram__small-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 450px;
+  height: 450px;
+  -webkit-transform: rotate(-32deg) translate(70%, 0%);
+          transform: rotate(-32deg) translate(70%, 0%);
+}
+
+.telegram__big-item {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 700px;
+  height: 700px;
+  -webkit-transform: rotate(25deg) translate(-100%, 10%);
+          transform: rotate(25deg) translate(-100%, 10%);
+}
