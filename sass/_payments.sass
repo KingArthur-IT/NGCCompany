@@ -37,3 +37,66 @@
         border-left: 1px solid #000
         padding-left: 26px
     &__item
+
+
+@media screen and (max-width: 1440px)
+    .payments
+        &__img
+            width: 50%
+@media screen and (max-width: 1200px)
+    .payments
+        &__container
+            flex-direction: column-reverse
+            align-items: stretch
+        &__hero
+            flex-basis: 100%
+        &__img
+            width: 60%
+            flex-basis: 100%
+            margin: 0 auto
+        &__title
+            text-align: center
+        &__table
+            max-width: 600px
+            margin: 0 auto
+            margin-bottom: 18px
+        &__text
+            text-align: center
+            margin-bottom: 18px
+@media screen and (max-width: 600px)
+    .payments
+        &__table
+            padding: 10px 10px 10px 20px
+        &__left
+            flex-basis: 45%
+        &__right
+            flex-basis: 60%
+            padding-left: 15px
+        &__text
+            text-align: left
+        &__img
+            width: 80%
+@media screen and (max-width: 475px)
+    .payments
+        &__table
+            font-size: 14px
+        &__right
+            & span
+                display: none
+@media screen and (max-width: 425px)
+    .payments
+        &__table
+            padding: 10px 5px 10px 10px
+        &__img
+            width: 100%
+@media screen and (max-width: 393px)
+    .payments
+        &__table
+            padding: 20px
+            flex-direction: column
+        &__right
+            padding-left: 0
+            border-left: none
+            & span
+                display: inline
+
