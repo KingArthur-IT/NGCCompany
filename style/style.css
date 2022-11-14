@@ -1481,6 +1481,55 @@ body {
   margin-left: calc(50vw - 660px);
 }
 
+@media screen and (max-width: 1440px) {
+  .deals__slide {
+    padding: 0 30px 0 0;
+  }
+}
+
+@media screen and (max-width: 1379px) {
+  .deals__carousel .owl-stage {
+    margin-left: -70px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .deals__slide {
+    padding: 0 20px 0 0;
+  }
+  .deals__item:first-child {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .deals__item {
+    border-radius: 14px;
+  }
+  .deals__carousel {
+    margin-bottom: 50px;
+  }
+  .deals__carousel-btn {
+    width: 110px;
+    height: 56px;
+  }
+  .deals__carousel-btn svg {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .deals__slide {
+    padding: 0 15px 0 0;
+  }
+  .deals__item:first-child {
+    margin-bottom: 15px;
+  }
+  .deals__carousel .owl-stage {
+    margin-left: -30px;
+  }
+}
+
 .reviews {
   background: url("../assets/reviews-bg.jpg") no-repeat;
   background-size: cover;
