@@ -10,10 +10,32 @@
         margin-bottom: 36px
         text-transform: uppercase
         & span
-            color: $primary
+            color: #F4450E
     &__text
         text-align: center
         color: #fff
         margin-bottom: 32px
     &__btn
         margin: 0 auto
+
+@media screen and (max-width: 1550px)
+    .start
+        &__text
+            max-width: 1000px
+            margin: 0 auto
+            margin-bottom: 32px
+@media screen and (max-width: 1024px)
+    .start
+        &__title
+            margin-bottom: 18px
+@media screen and (max-width: 600px)
+    .start
+        &__title
+            width: 108%
+            transform: translateX(-4%)
+@media screen and (max-width: 425px)
+    .start
+        &__title
+            margin-bottom: 12px
+        &__text span
+            display: none

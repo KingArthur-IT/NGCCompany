@@ -36,3 +36,46 @@
     &__item
         margin-bottom: 20px
         padding-left: 7px
+
+@media screen and (max-width: 1450px)
+    .ceo
+        &__img
+            width: 60%
+            align-self: flex-end
+            transform: translateX(0%)
+
+@media screen and (max-width: 1024px)
+    .ceo
+        &__wrapper
+            flex-direction: column
+        &__img
+            margin: 0 auto
+        &__title
+            text-align: center
+            font-size: 90px
+        &__subtitle
+            text-align: center
+@media screen and (max-width: 768px)
+    .ceo
+        &__title
+            font-size: 60px
+        &__img
+            width: 80%
+        &__item
+            margin-bottom: 10px
+@media screen and (max-width: 600px)
+    .ceo
+        &__hero
+            padding-top: 0
+        &__subtitle
+            margin-bottom: 12px
+        &__img
+            width: calc(100% + 60px)
+            transform: translateX(-30px)
+@media screen and (max-width: 425px)
+    .ceo
+        &__title
+            font-size: 37px
+        &__img
+            width: calc(100% + 40px)
+            transform: translateX(-20px)

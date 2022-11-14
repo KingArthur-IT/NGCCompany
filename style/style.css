@@ -1226,7 +1226,7 @@ body {
 }
 
 .start__title span {
-  color: #FD6D32;
+  color: #F4450E;
 }
 
 .start__text {
@@ -1237,6 +1237,37 @@ body {
 
 .start__btn {
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1550px) {
+  .start__text {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .start__title {
+    margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .start__title {
+    width: 108%;
+    -webkit-transform: translateX(-4%);
+            transform: translateX(-4%);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .start__title {
+    margin-bottom: 12px;
+  }
+  .start__text span {
+    display: none;
+  }
 }
 
 .ceo {
@@ -1299,6 +1330,72 @@ body {
 .ceo__item {
   margin-bottom: 20px;
   padding-left: 7px;
+}
+
+@media screen and (max-width: 1450px) {
+  .ceo__img {
+    width: 60%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ceo__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .ceo__img {
+    margin: 0 auto;
+  }
+  .ceo__title {
+    text-align: center;
+    font-size: 90px;
+  }
+  .ceo__subtitle {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ceo__title {
+    font-size: 60px;
+  }
+  .ceo__img {
+    width: 80%;
+  }
+  .ceo__item {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ceo__hero {
+    padding-top: 0;
+  }
+  .ceo__subtitle {
+    margin-bottom: 12px;
+  }
+  .ceo__img {
+    width: calc(100% + 60px);
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .ceo__title {
+    font-size: 37px;
+  }
+  .ceo__img {
+    width: calc(100% + 40px);
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
 }
 
 .deals {
