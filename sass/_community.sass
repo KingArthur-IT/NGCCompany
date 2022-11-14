@@ -1,18 +1,22 @@
 .community
     background-color: #171717
-    padding: 240px 0
+    padding: 180px 0
     margin-top: -90px
     color: #fff
     background: url("../assets/community-bg.png") no-repeat
     background-size: cover
     background-position-x: center
     overflow: hidden
+    z-index: 1
     &__title
         margin-bottom: 54px
         color: #fff
         max-width: 1000px
+        text-transform: uppercase
         & span
             color: $primary
+    &__title-br
+        display: none
     &__text
         max-width: 587px
         color: #fff
@@ -25,7 +29,6 @@
         height: 930px
         transform: translateX(20%)
     &__coin-wrap
-        // animation: floating 6s ease-in-out infinite
     &__small-coin
         position: absolute
         right: -100px
@@ -160,3 +163,124 @@
         margin-bottom: 32px
     &__label
         color: #fff
+
+@media screen and (max-width: 1200px)
+    .community
+        &__phone
+            width: 560px
+            height: 760px
+            transform: translate(25%, 10%)
+    .calculator
+        &__resume
+            margin-right: 30px
+
+@media screen and (max-width: 1024px)
+    .community
+        padding-bottom: 100px
+        &__title
+            margin-bottom: 30px
+        &__text
+            max-width: 550px
+        &__phone
+            width: 500px
+            height: 700px
+            transform: translate(25%, 18%)
+        &__big-coin
+            width: 200px
+            height: 190px
+            left: 0px
+            bottom: -80px
+    .calculator
+        &__resume
+            display: none
+        &__title
+            margin-bottom: 0
+    .range
+        width: 100%
+        &__text
+            margin-bottom: 36px
+
+@media screen and (max-width: 950px)
+    .community
+        &__phone
+            transform: translate(35%, 18%)
+
+@media screen and (max-width: 880px)
+    .community
+        &__phone
+            position: relative
+            transform: translate(0%, 0%)
+            margin: 0 auto
+            display: block
+            margin-top: -80px
+            margin-bottom: -100px
+        &__title
+            max-width: 100%
+        &__text
+            max-width: 100%
+            margin-bottom: 0
+        &__small-coin
+            width: 200px
+            height: 190px
+            bottom: 450px
+        &__big-coin
+            width: 200px
+            height: 190px
+    .calculator
+        margin-top: 200px
+@media screen and (max-width: 600px)
+    .community
+        &__phone
+            width: 100vw
+            height: auto
+            margin-top: -40px
+            margin-bottom: -80px
+        &__title-br
+            display: inline
+    .range
+        &__thumb
+            &::after
+                font-size: 16px
+                width: 260px
+                height: 230px
+                bottom: -55px
+                left: -120px
+                padding-bottom: 5px
+    .calculator
+        &__subtitle
+            margin-bottom: 20px
+
+@media screen and (max-width: 550px)
+    .calculator
+        margin-top: 100px
+    .community
+        &__small-coin
+            width: 100px
+            height: 100px
+            right: -40px
+            bottom: 460px
+@media screen and (max-width: 500px)
+    .community
+        &__small-coin
+            width: 100px
+            height: 100px
+            right: -40px
+            bottom: 500px
+@media screen and (max-width: 425px)
+    .community
+        &__title
+            margin-bottom: 21px
+        &__phone
+            margin-top: -40px
+            margin-bottom: -60px
+        &__big-coin
+            width: 120px
+            height: 120px
+            left: 0px
+            bottom: -60px
+        &__small-coin
+            bottom: 430px
+@media screen and (max-width: 380px)
+    .community
+        &__small-coin
+            bottom: 450px

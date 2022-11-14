@@ -111,9 +111,18 @@ body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 58px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .btn {
     font-size: 18px;
+  }
+  .title {
+    font-size: 48px;
   }
 }
 
@@ -134,11 +143,20 @@ body {
     font-size: 16px;
     padding: 23px;
   }
+  .title {
+    font-size: 37px;
+  }
   .text {
     font-size: 14px;
   }
   body {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .title {
+    font-size: 32px;
   }
 }
 
@@ -613,23 +631,29 @@ body {
 
 .community {
   background-color: #171717;
-  padding: 240px 0;
+  padding: 180px 0;
   margin-top: -90px;
   color: #fff;
   background: url("../assets/community-bg.png") no-repeat;
   background-size: cover;
   background-position-x: center;
   overflow: hidden;
+  z-index: 1;
 }
 
 .community__title {
   margin-bottom: 54px;
   color: #fff;
   max-width: 1000px;
+  text-transform: uppercase;
 }
 
 .community__title span {
   color: #FD6D32;
+}
+
+.community__title-br {
+  display: none;
 }
 
 .community__text {
@@ -865,6 +889,161 @@ body {
 
 .range__label {
   color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .community__phone {
+    width: 560px;
+    height: 760px;
+    -webkit-transform: translate(25%, 10%);
+            transform: translate(25%, 10%);
+  }
+  .calculator__resume {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .community {
+    padding-bottom: 100px;
+  }
+  .community__title {
+    margin-bottom: 30px;
+  }
+  .community__text {
+    max-width: 550px;
+  }
+  .community__phone {
+    width: 500px;
+    height: 700px;
+    -webkit-transform: translate(25%, 18%);
+            transform: translate(25%, 18%);
+  }
+  .community__big-coin {
+    width: 200px;
+    height: 190px;
+    left: 0px;
+    bottom: -80px;
+  }
+  .calculator__resume {
+    display: none;
+  }
+  .calculator__title {
+    margin-bottom: 0;
+  }
+  .range {
+    width: 100%;
+  }
+  .range__text {
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .community__phone {
+    -webkit-transform: translate(35%, 18%);
+            transform: translate(35%, 18%);
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .community__phone {
+    position: relative;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    margin: 0 auto;
+    display: block;
+    margin-top: -80px;
+    margin-bottom: -100px;
+  }
+  .community__title {
+    max-width: 100%;
+  }
+  .community__text {
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .community__small-coin {
+    width: 200px;
+    height: 190px;
+    bottom: 450px;
+  }
+  .community__big-coin {
+    width: 200px;
+    height: 190px;
+  }
+  .calculator {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .community__phone {
+    width: 100vw;
+    height: auto;
+    margin-top: -40px;
+    margin-bottom: -80px;
+  }
+  .community__title-br {
+    display: inline;
+  }
+  .range__thumb::after {
+    font-size: 16px;
+    width: 260px;
+    height: 230px;
+    bottom: -55px;
+    left: -120px;
+    padding-bottom: 5px;
+  }
+  .calculator__subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .calculator {
+    margin-top: 100px;
+  }
+  .community__small-coin {
+    width: 100px;
+    height: 100px;
+    right: -40px;
+    bottom: 460px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .community__small-coin {
+    width: 100px;
+    height: 100px;
+    right: -40px;
+    bottom: 500px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .community__title {
+    margin-bottom: 21px;
+  }
+  .community__phone {
+    margin-top: -40px;
+    margin-bottom: -60px;
+  }
+  .community__big-coin {
+    width: 120px;
+    height: 120px;
+    left: 0px;
+    bottom: -60px;
+  }
+  .community__small-coin {
+    bottom: 430px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .community__small-coin {
+    bottom: 450px;
+  }
 }
 
 .payments {
