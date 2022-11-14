@@ -30,16 +30,25 @@
         min-height: calc(100vh - 50px)
         transform: translateX(-15%)
     &__left-corner-anim
+        pointer-events: none
         position: absolute
         left: 0
         bottom: 0
         transform: translate(-40%, 40%)
-        width: 800px
+        width: 600px
         height: 800px
     &__right-corner-anim
+        pointer-events: none
         position: absolute
         right: 0
         bottom: 0
         transform: translate(40%, 40%)
-        width: 800px
+        width: 600px
         height: 800px
+
+// @media screen and (max-width: 1640px)
+//     .baner
+//         &__left-corner-anim
+//             width: 600px
+//         &__right-corner-anim
+//             width: 600px

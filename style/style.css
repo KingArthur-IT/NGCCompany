@@ -112,11 +112,13 @@ body {
 }
 
 .floating {
+  pointer-events: none;
   -webkit-animation: floating 6s linear infinite;
           animation: floating 6s linear infinite;
 }
 
 .floating-1 {
+  pointer-events: none;
   -webkit-animation: floating 5s ease-in infinite;
           animation: floating 5s ease-in infinite;
   -webkit-animation-delay: 1s;
@@ -124,16 +126,19 @@ body {
 }
 
 .floating-2 {
+  pointer-events: none;
   -webkit-animation: floatingX 8s linear infinite;
           animation: floatingX 8s linear infinite;
 }
 
 .floating-3 {
+  pointer-events: none;
   -webkit-animation: floating 4s linear infinite;
           animation: floating 4s linear infinite;
 }
 
 .floating-4 {
+  pointer-events: none;
   -webkit-animation: floatingX 5s ease-in-out infinite;
           animation: floatingX 5s ease-in-out infinite;
 }
@@ -383,22 +388,24 @@ body {
 }
 
 .baner__left-corner-anim {
+  pointer-events: none;
   position: absolute;
   left: 0;
   bottom: 0;
   -webkit-transform: translate(-40%, 40%);
           transform: translate(-40%, 40%);
-  width: 800px;
+  width: 600px;
   height: 800px;
 }
 
 .baner__right-corner-anim {
+  pointer-events: none;
   position: absolute;
   right: 0;
   bottom: 0;
   -webkit-transform: translate(40%, 40%);
           transform: translate(40%, 40%);
-  width: 800px;
+  width: 600px;
   height: 800px;
 }
 
@@ -1115,8 +1122,8 @@ body {
   position: absolute;
   bottom: 0;
   left: 50%;
-  -webkit-transform: translate(-50%, 0%);
-          transform: translate(-50%, 0%);
+  -webkit-transform: translate(-50%, 10%);
+          transform: translate(-50%, 10%);
   background: url("../assets/footer-light.png") no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -1188,4 +1195,15 @@ body {
 
 .footer__social {
   margin-left: 80px;
+}
+
+.footer__bubles {
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translate(-50%, 40%);
+          transform: translate(-50%, 40%);
+  width: 500px;
+  height: 500px;
 }
