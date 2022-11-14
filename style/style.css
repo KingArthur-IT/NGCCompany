@@ -111,6 +111,37 @@ body {
   overflow: hidden;
 }
 
+@media screen and (max-width: 768px) {
+  .btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .text {
+    font-size: 16px;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    padding: 0 20px;
+  }
+  .btn {
+    font-size: 16px;
+    padding: 23px;
+  }
+  .text {
+    font-size: 14px;
+  }
+  body {
+    font-size: 14px;
+  }
+}
+
 .floating {
   pointer-events: none;
   -webkit-animation: floating 6s linear infinite;
@@ -338,6 +369,40 @@ body {
   color: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+  .header__logo {
+    margin-right: 0;
+  }
+  .header__wrap {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header__lang {
+    margin-left: 0;
+  }
+  .header__nav-item:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 30px;
+  }
+  .header__nav {
+    display: none;
+  }
+  .header__lang {
+    display: none;
+  }
+  .header__wrap {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .baner {
   position: relative;
   min-height: 100vh;
@@ -385,6 +450,7 @@ body {
   min-height: calc(100vh - 50px);
   -webkit-transform: translateX(-15%);
           transform: translateX(-15%);
+  z-index: 1;
 }
 
 .baner__left-corner-anim {
@@ -396,9 +462,11 @@ body {
           transform: translate(-40%, 40%);
   width: 600px;
   height: 800px;
+  z-index: 0;
 }
 
 .baner__right-corner-anim {
+  z-index: 0;
   pointer-events: none;
   position: absolute;
   right: 0;
@@ -407,6 +475,140 @@ body {
           transform: translate(40%, 40%);
   width: 600px;
   height: 800px;
+}
+
+@media screen and (max-width: 1440px) {
+  .baner__left-corner-anim {
+    width: 500px;
+    -webkit-transform: translate(-40%, 45%);
+            transform: translate(-40%, 45%);
+  }
+  .baner__right-corner-anim {
+    width: 500px;
+    -webkit-transform: translate(40%, 45%);
+            transform: translate(40%, 45%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .baner__title {
+    font-size: 55px;
+    margin-bottom: 18px;
+  }
+  .baner__title span {
+    font-size: 120px;
+  }
+  .baner__man {
+    height: 100vh;
+    -webkit-transform: translateX(-20%);
+            transform: translateX(-20%);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .baner__hero {
+    padding-top: 120px;
+  }
+  .baner__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .baner__title {
+    text-align: center;
+  }
+  .baner__text {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .baner__man {
+    height: auto;
+    min-height: auto;
+    margin: auto;
+    width: 60vw;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  .baner__btn {
+    position: absolute;
+    bottom: -65vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    z-index: 5;
+    min-width: 320px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .baner__hero {
+    padding-top: 100px;
+  }
+  .baner__title {
+    margin-bottom: 0;
+  }
+  .baner__left-corner-anim {
+    width: 400px;
+  }
+  .baner__right-corner-anim {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .baner__title {
+    font-size: 38px;
+  }
+  .baner__title span {
+    font-size: 85px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .baner__man {
+    width: 80vw;
+  }
+  .baner__btn {
+    bottom: -85vw;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .baner__btn {
+    min-width: 315px;
+  }
+  .baner__left-corner-anim {
+    width: 300px;
+  }
+  .baner__right-corner-anim {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .baner__title {
+    font-size: 29px;
+  }
+  .baner__title span {
+    font-size: 62px;
+  }
+  .baner__btn {
+    min-width: 280px;
+    bottom: -95vw;
+  }
+  .baner__man {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 343px) {
+  .baner__man {
+    width: 100vw;
+  }
+  .baner__btn {
+    bottom: -105vw;
+  }
 }
 
 .community {
