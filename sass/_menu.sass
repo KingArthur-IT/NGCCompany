@@ -13,6 +13,18 @@
     opacity: 0
     pointer-events: none
     transition: opacity 0.3s ease-in-out
+    &::before
+        content: ''
+        background: url('../assets/mobile-menu-bg.png') no-repeat
+        position: absolute
+        bottom: 0
+        left: 0
+        right: 0
+        top: 0
+        background-size: contain
+        background-position-y: 150%
+        background-position-x: 100%
+        opacity: 0.5
     &.opened
         opacity: 1
         pointer-events: all
@@ -54,3 +66,12 @@
         width: 195px
         height: 56px
         font-size: 14px
+    &__bubles
+        position: absolute
+        bottom: 0
+        right: 0
+        width: 500px
+        height: 500px
+        transform: translate(40%, 40%)
+        opacity: 0.6
+        z-index: -1

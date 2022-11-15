@@ -31,6 +31,9 @@
         & a
             font-weight: 700
             color: #FFFFFF
+            &:hover
+                color: $primary
+                transition: color 0.3s ease-in-out
     &__lang
         margin-left: auto
         & a
@@ -66,3 +69,7 @@
             justify-content: space-between
         &__burger
             display: block
+
+@media screen and (max-width: 600px)
+    .header
+        padding-top: 30px
