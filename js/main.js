@@ -3,6 +3,7 @@ const range = document.querySelector('.range__input')
 const thumb = document.querySelector('.range__thumb')
 const track = document.querySelector('.range__track-inner')
 const investmentResume = document.getElementById('investment-value')
+const investmentRezult = document.getElementById('investment-rezult')
 const minRange = range.getAttribute('min')
 const maxRange = range.getAttribute('max')
 
@@ -16,6 +17,7 @@ range.oninput = (e) => {
     updateSlider(100.0 * e.target.value / (maxRange - minRange))
     thumb.setAttribute('data-value', e.target.value)
     investmentResume.innerText = `${e.target.value}$`
+    investmentRezult.innerText = `${e.target.value * 1.5}$`
 }
 
 updateSlider(52) // Init value
@@ -66,16 +68,19 @@ accordeons.forEach((item, index) => {
 
 
 //menu
-// document.querySelector('.header__burger').addEventListener('click', () => {
-//   document.querySelector('.menu').classList.add('opened');
-// });
+document.querySelector('.header__burger').addEventListener('click', () => {
+  document.querySelector('.menu').classList.add('opened');
+  document.querySelector('body').classList.add('overflow-hidden');
+});
 
-// document.querySelector('.menu__close').addEventListener('click', () => {
-//   document.querySelector('.menu').classList.remove('opened');
-// });
+document.querySelector('.menu__btn').addEventListener('click', () => {
+    document.querySelector('.menu').classList.remove('opened');
+    document.querySelector('body').classList.remove('overflow-hidden');
+});
 
-// document.querySelectorAll('.menu__anchor').forEach( (el) => {
-//   el.addEventListener('click', () => {
-//     document.querySelector('.menu').classList.remove('opened');
-//   })
-// })
+document.querySelectorAll('.menu__link').forEach( (el) => {
+  el.addEventListener('click', () => {
+    document.querySelector('.menu').classList.remove('opened');
+    document.querySelector('body').classList.remove('overflow-hidden');
+  })
+})

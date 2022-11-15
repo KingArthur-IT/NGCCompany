@@ -41,6 +41,9 @@
             color: #B7B7B7
         & a.active
             color: #fff
+    &__burger
+        display: none
+        cursor: pointer
 
 @media screen and (max-width: 1024px)
     .header
@@ -55,10 +58,11 @@
 
 @media screen and (max-width: 768px)
     .header
-        padding-top: 30px
         &__nav
             display: none
         &__lang
             display: none
         &__wrap
-            justify-content: center
+            justify-content: space-between
+        &__burger
+            display: block

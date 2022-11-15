@@ -71,8 +71,17 @@
 
 @media screen and (max-width: 768px)
     .baner
-        &__hero
-            padding-top: 120px
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            right: 0
+            background: url('../assets/baner-mobile-light.png') no-repeat
+            background-size: cover
+            width: 350px
+            height: 350px
+        // &__hero
+        //     padding-top: 120px
         &__wrap
             flex-direction: column
         &__title
@@ -97,7 +106,7 @@
 @media screen and (max-width: 600px)
     .baner
         &__hero
-            padding-top: 100px
+            padding-top: 120px
         &__title
             margin-bottom: 0
         &__left-corner-anim
