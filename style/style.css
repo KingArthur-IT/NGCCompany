@@ -369,7 +369,7 @@ body {
 }
 
 .menu.opened {
-  opacity: 1;
+  opacity: 1 !important;
   pointer-events: all;
 }
 
