@@ -325,6 +325,15 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .accordeon__head {
+    padding: 14px 38px 14px 16px;
+  }
+  .accordeon__panel p {
+    padding: 40px 16px 30px;
+  }
+}
+
 .menu {
   position: fixed;
   top: 0;
