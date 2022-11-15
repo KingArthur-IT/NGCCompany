@@ -1551,6 +1551,7 @@ body {
   font-weight: 700;
   color: #FF4D14;
   margin-bottom: 24px;
+  z-index: 2;
 }
 
 .ceo__list {
