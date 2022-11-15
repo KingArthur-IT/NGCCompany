@@ -4,6 +4,16 @@
     background-size: cover
     background-position-x: center
     background-position-y: center
+    &::before
+        content: ''
+        background: linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
+        filter: blur(50px)
+        position: absolute
+        bottom: -100px
+        left: 0
+        right: 0
+        height: 200px
+        z-index: 1
     &__title
         text-align: center
         color: #fff

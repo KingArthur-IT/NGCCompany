@@ -4,15 +4,8 @@
     background-size: cover
     background-position-x: center
     background-position-y: center
-    &::before
-        content: ''
-        background: linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
-        filter: blur(50px)
-        position: absolute
-        top: -100px
-        left: 0
-        right: 0
-        height: 200px
+    overflow-x: hidden
+    padding-top: 50px
     &__wrapper
         display: flex
         justify-content: space-between
@@ -25,6 +18,7 @@
         font-size: 109px
         text-transform: uppercase
         color: #FFFFFF
+        z-index: 2
     &__subtitle
         font-weight: 700
         color: $primary
@@ -39,17 +33,23 @@
 
 @media screen and (max-width: 1450px)
     .ceo
+        &__hero
+            padding-bottom: 80px
         &__img
-            width: 60%
+            width: 90%
             align-self: flex-end
-            transform: translateX(0%)
+            transform: translateX(-15%)
 
 @media screen and (max-width: 1024px)
     .ceo
+        padding-top: 0
+        &__hero
+            padding-bottom: 0
         &__wrapper
             flex-direction: column
         &__img
             margin: 0 auto
+            transform: translateX(-10%)
         &__title
             text-align: center
             font-size: 90px
@@ -60,7 +60,7 @@
         &__title
             font-size: 60px
         &__img
-            width: 80%
+            width: 100%
         &__item
             margin-bottom: 10px
 @media screen and (max-width: 600px)
@@ -70,12 +70,12 @@
         &__subtitle
             margin-bottom: 12px
         &__img
-            width: calc(100% + 60px)
-            transform: translateX(-30px)
+            width: 120%
+            transform: translateX(-20%)
 @media screen and (max-width: 425px)
     .ceo
         &__title
             font-size: 37px
         &__img
-            width: calc(100% + 40px)
-            transform: translateX(-20px)
+            width: 180%
+            transform: translateX(-38%)
