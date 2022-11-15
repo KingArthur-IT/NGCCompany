@@ -25,7 +25,9 @@
         color: #fff
         margin-bottom: 55px
         max-width: 450px
+        z-index: 2
     &__btn
+        z-index: 2
     &__phone
         position: relative
         &::before
@@ -38,6 +40,8 @@
             width: 600px
             height: 600px
             transform: translate(50%, 50%)
+        & img
+            width: 100%
     &__small-item
         position: absolute
         bottom: 800px
@@ -52,3 +56,137 @@
         width: 700px
         height: 700px
         transform: rotate(25deg) translate(-100%, 10%)
+    &__mobile-item-wrap
+        display: none
+
+@media screen and (max-width: 1240px)
+    .telegram
+        &__phone
+            flex-basis: 40%
+        &__big-item
+            width: 400px
+            height: 400px
+            transform: rotate(25deg) translate(-50%, 25%)
+        &__small-item
+            width: 250px
+            height: 250px
+            bottom: 60vw
+            transform: rotate(-32deg) translate(50%, 0%)
+
+@media screen and (max-width: 1024px)
+    .telegram
+        &__big-item
+            width: 200px
+            height: 200px
+            transform: rotate(25deg) translate(-50%, 25%)
+        &__small-item
+            width: 200px
+            height: 200px
+            transform: rotate(-32deg) translate(50%, 0%)
+
+@media screen and (max-width: 925px)
+    .telegram
+        padding-bottom: 100px
+        &__big-item
+            transform: rotate(25deg) translate(-50%, 50%)
+        &__small-item
+            bottom: 55vw
+
+@media screen and (max-width: 860px)
+    .telegram
+        &__wrap
+            align-items: center
+        &__small-item
+            bottom: 45vw
+            transform: rotate(-32deg) translate(70%, 0%)
+
+@media screen and (max-width: 768px)
+    .telegram
+        padding-bottom: 0
+        &__wrap
+            flex-direction: column-reverse
+        &__phone
+            z-index: 1
+            position: relative
+            & img
+                width: 80%
+                height: auto
+                margin: 0 auto
+                display: block
+        &__hero
+            margin-right: 0
+            background-color: #141414
+            z-index: 2
+            margin-top: -60vw
+            width: calc(100% + 60px)
+            padding-bottom: 100px
+        &__title
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 19px
+            padding: 0 30px
+        &__text
+            text-align: center
+            margin: 0 auto
+            margin-bottom: 32px
+            padding: 0 30px
+            max-width: 100%
+        &__btn
+            margin: 0 auto
+        &__big-item
+            display: none
+        &__small-item
+            display: none
+        &__mobile-item-wrap
+            display: block
+            position: absolute
+            z-index: -1
+            &.small
+                width: 250px
+                height: 250px
+                top: -80px
+                right: -50px
+                & img
+                    transform: rotate(-32deg) translate(0%, 0%)
+            &.big
+                width: 250px
+                height: 250px
+                bottom: 40vw
+                left: -120px
+                & img
+                    transform: rotate(32deg) translate(0%, 0%)
+
+
+@media screen and (max-width: 600px)
+    .telegram
+        &__mobile-item-wrap
+            &.small
+                width: 150px
+                height: 150px
+                top: -20px
+                right: -20px
+            &.big
+                width: 200px
+                height: 200px
+                bottom: 40vw
+                left: -100px
+
+@media screen and (max-width: 425px)
+    .telegram
+        &__mobile-item-wrap
+            &.small
+                width: 150px
+                height: 150px
+                top: -30px
+                right: -30px
+            &.big
+                bottom: 33vw
+
+@media screen and (max-width: 375px)
+    .telegram
+        &__mobile-item-wrap
+            &.big
+                width: 150px
+                height: 150px
+                bottom: 35vw
+                left: -70px

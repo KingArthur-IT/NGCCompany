@@ -26,7 +26,7 @@
         font-size: 33px
         line-height: 1.0
         color: #FFFFFF
-        margin-right: 194px
+        flex-basis: 35%
         & span
             display: block
             font-family: 'Montserrat', sans-serif
@@ -35,6 +35,7 @@
     &__links
         display: flex
         flex-direction: column
+        flex-basis: 25%
     &__link
         font-weight: 700
         color: #FFFFFF
@@ -43,10 +44,12 @@
     &__mail
         font-weight: 700
         color: #FFFFFF
+        flex-basis: 25%
     &__socials
         display: flex
-        justify-content: space-between
+        justify-content: flex-end
         align-items: flex-start
+        flex-basis: 25%
     &__social
         margin-left: 80px
     &__bubles
@@ -57,3 +60,28 @@
         transform: translate(-50%, 40%)
         width: 500px
         height: 500px
+
+@media screen and (max-width: 1240px)
+    .footer
+        &__social
+            margin-left: 40px
+
+@media screen and (max-width: 768px)
+    .footer
+        &__wrap
+            flex-direction: column
+            align-items: center
+        &__logo
+            margin-bottom: 50px
+        &__links
+            margin-bottom: 50px
+        &__link
+            text-align: center
+        &__mail
+            text-align: center
+            margin-bottom: 100px
+        &__social
+            margin-left: 30px
+            margin-right: 30px
+        &__bubles
+            transform: translate(-50%, 50%)

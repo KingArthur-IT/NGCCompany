@@ -8,6 +8,7 @@
     padding: 160px 0
     margin-top: -550px
     overflow: hidden
+    z-index: 3
     &__title
         text-align: center
         text-transform: uppercase
@@ -28,3 +29,39 @@
             width: 300px
             transform: rotate(26deg)
 
+@media screen and (max-width: 1440px)
+    .faq
+        &__small-question
+            top: 60px
+            right: 20px
+            & img
+                width: 100px
+        &__big-question
+            left: -70px
+            top: 0%
+            & img
+                width: 150px
+@media screen and (max-width: 1240px)
+    .faq
+        margin-top: -20vw
+
+@media screen and (max-width: 1075px)
+    .faq
+        margin-top: -10vw
+
+@media screen and (max-width: 940px)
+    .faq
+        margin-top: -60px
+
+@media screen and (max-width: 600px)
+    .faq
+        &__small-question
+            top: 60px
+            right: -10px
+            & img
+                width: 70px
+        &__big-question
+            left: -40px
+            top: 0%
+            & img
+                width: 100px
