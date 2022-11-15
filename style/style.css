@@ -793,6 +793,10 @@ body {
           transform: translateX(20%);
 }
 
+.community__mobile-phone {
+  display: none;
+}
+
 .community__small-coin {
   position: absolute;
   right: -100px;
@@ -1012,6 +1016,10 @@ body {
   color: #fff;
 }
 
+.range__btn {
+  z-index: 2;
+}
+
 @media screen and (max-width: 1200px) {
   .community__phone {
     width: 560px;
@@ -1026,19 +1034,30 @@ body {
 
 @media screen and (max-width: 1024px) {
   .community {
+    background: url("../assets/community-mobile-bg.png") no-repeat;
+    background-size: cover;
+    background-position-x: center;
     padding-bottom: 100px;
   }
   .community__title {
     margin-bottom: 30px;
+    max-width: 100%;
   }
   .community__text {
-    max-width: 550px;
+    max-width: 100%;
+    margin-bottom: 0;
   }
   .community__phone {
-    width: 500px;
-    height: 700px;
-    -webkit-transform: translate(25%, 18%);
-            transform: translate(25%, 18%);
+    display: none;
+  }
+  .community__mobile-phone {
+    display: block;
+    position: relative;
+    width: 160%;
+    margin-top: -33%;
+    margin-bottom: -10%;
+    margin-left: -20%;
+    z-index: -1;
   }
   .community__big-coin {
     width: 200px;
@@ -1068,21 +1087,8 @@ body {
 }
 
 @media screen and (max-width: 880px) {
-  .community__phone {
-    position: relative;
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    margin: 0 auto;
-    display: block;
-    margin-top: -80px;
-    margin-bottom: -100px;
-  }
-  .community__title {
-    max-width: 100%;
-  }
-  .community__text {
-    max-width: 100%;
-    margin-bottom: 0;
+  .community {
+    padding-top: 150px;
   }
   .community__small-coin {
     width: 200px;
@@ -1099,6 +1105,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .community {
+    padding-top: 100px;
+  }
   .community__phone {
     width: 100vw;
     height: auto;
@@ -1442,7 +1451,7 @@ body {
 
 .ceo__subtitle {
   font-weight: 700;
-  color: #FD6D32;
+  color: #FF4D14;
   margin-bottom: 24px;
 }
 
