@@ -1416,6 +1416,20 @@ body {
   z-index: 1;
 }
 
+.start::after {
+  content: '';
+  background: url("../assets/two-plash.png") no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  position: absolute;
+  top: -15px;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 3;
+  display: none;
+}
+
 .start__title {
   text-align: center;
   color: #fff;
@@ -1452,7 +1466,23 @@ body {
   }
 }
 
+@media screen and (max-width: 900px) {
+  .start::after {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .start::after {
+    height: 70px;
+    top: 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
+  .start {
+    padding-top: 120px;
+  }
   .start__title {
     width: 108%;
     -webkit-transform: translateX(-4%);
@@ -1463,6 +1493,9 @@ body {
 @media screen and (max-width: 425px) {
   .start {
     padding-bottom: 100px;
+  }
+  .start::after {
+    top: 15px;
   }
   .start__title {
     margin-bottom: 12px;
