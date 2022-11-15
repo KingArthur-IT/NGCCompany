@@ -15,7 +15,7 @@ $(document).ready(function(){
             items: 1,
             stagePadding: 50,
           },
-          425:{
+          426:{
             items: 1,
             stagePadding: 100,
           },
@@ -60,7 +60,7 @@ $(document).ready(function(){
             items: 1,
             stagePadding: 50,
           },
-          425:{
+          426:{
             items: 1,
             stagePadding: 100,
           },
