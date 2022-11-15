@@ -47,6 +47,7 @@ body {
 }
 
 .btn {
+  font-family: 'Montserrat', sans-serif;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -419,6 +420,7 @@ body {
 }
 
 .menu__btn {
+  font-family: 'Montserrat', sans-serif;
   border: 1px solid #FFFFFF;
   border-radius: 48px;
   display: -webkit-box;
@@ -721,7 +723,7 @@ body {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
     z-index: 5;
-    min-width: 320px;
+    min-width: 350px;
   }
 }
 
@@ -780,6 +782,7 @@ body {
   .baner__btn {
     min-width: 280px;
     bottom: -95vw;
+    padding: 23px 15px;
   }
   .baner__man {
     width: 90vw;
@@ -1222,6 +1225,9 @@ body {
   .community__small-coin {
     bottom: 450px;
   }
+  .range__btn {
+    padding: 23px 15px;
+  }
 }
 
 .payments {
@@ -1509,6 +1515,12 @@ body {
   }
   .start__text span {
     display: none;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .start__btn {
+    padding: 23px 15px;
   }
 }
 
