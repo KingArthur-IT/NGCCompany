@@ -38,13 +38,15 @@
         padding-left: 26px
     &__item
 
-
 @media screen and (max-width: 1440px)
     .payments
         &__img
             width: 50%
 @media screen and (max-width: 1200px)
     .payments
+        background: url("../assets/payments-mobile-bg.png") no-repeat
+        background-size: 100% 100%
+        background-position-x: center
         &__container
             flex-direction: column-reverse
             align-items: stretch
@@ -63,6 +65,9 @@
         &__text
             text-align: center
             margin-bottom: 18px
+@media screen and (max-width: 768px)
+    .payments
+        padding: 80px 0
 @media screen and (max-width: 600px)
     .payments
         &__table
@@ -85,6 +90,7 @@
                 display: none
 @media screen and (max-width: 425px)
     .payments
+        padding: 60px 0
         &__table
             padding: 10px 5px 10px 10px
         &__img

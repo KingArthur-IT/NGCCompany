@@ -19,6 +19,7 @@
     &__wrap
         display: flex
         justify-content: space-between
+        z-index: 1
     &__logo
         font-family: 'Intro Black'
         font-style: normal
@@ -85,3 +86,7 @@
             margin-right: 30px
         &__bubles
             transform: translate(-50%, 50%)
+
+@media screen and (max-width: 425px)
+    .footer
+        padding-top: 30px

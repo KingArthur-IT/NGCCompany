@@ -1152,6 +1152,9 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .community {
+    padding-top: 80px;
+  }
   .community__title {
     margin-bottom: 21px;
   }
@@ -1251,6 +1254,11 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+  .payments {
+    background: url("../assets/payments-mobile-bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position-x: center;
+  }
   .payments__container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1281,6 +1289,12 @@ body {
   .payments__text {
     text-align: center;
     margin-bottom: 18px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .payments {
+    padding: 80px 0;
   }
 }
 
@@ -1315,6 +1329,9 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .payments {
+    padding: 60px 0;
+  }
   .payments__table {
     padding: 10px 5px 10px 10px;
   }
@@ -1380,6 +1397,7 @@ body {
 
 .start__btn {
   margin: 0 auto;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1550px) {
@@ -1405,6 +1423,9 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .start {
+    padding-bottom: 100px;
+  }
   .start__title {
     margin-bottom: 12px;
   }
@@ -1420,7 +1441,6 @@ body {
   background-position-x: center;
   background-position-y: center;
   overflow-x: hidden;
-  padding-top: 50px;
 }
 
 .ceo__wrapper {
@@ -1469,6 +1489,7 @@ body {
 @media screen and (max-width: 1450px) {
   .ceo__hero {
     padding-bottom: 80px;
+    padding-top: 0;
   }
   .ceo__img {
     width: 90%;
@@ -1650,6 +1671,16 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .deals {
+    background: url("../assets//deals/deals-mobile-bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 120px 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .deals__item {
     border-radius: 14px;
@@ -1667,6 +1698,9 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .deals {
+    padding: 80px 0;
+  }
   .deals__slide {
     padding: 0 15px 0 0;
   }
@@ -1795,6 +1829,9 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .reviews {
+    padding: 100px 0;
+  }
   .reviews__slide {
     padding: 0 15px 0 0;
   }
@@ -2153,6 +2190,16 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .faq {
+    background: url("../assets/faq-mobile-bg.png") no-repeat;
+    background-size: 100% 100%;
+    background-position-x: center;
+    background-position-y: center;
+    padding: 80px 0;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .faq__small-question {
     top: 60px;
@@ -2167,6 +2214,12 @@ body {
   }
   .faq__big-question img {
     width: 100px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .faq {
+    padding: 60px 0;
   }
 }
 
@@ -2200,6 +2253,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  z-index: 1;
 }
 
 .footer__logo {
@@ -2311,5 +2365,11 @@ body {
   .footer__bubles {
     -webkit-transform: translate(-50%, 50%);
             transform: translate(-50%, 50%);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .footer {
+    padding-top: 30px;
   }
 }

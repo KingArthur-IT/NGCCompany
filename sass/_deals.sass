@@ -61,6 +61,14 @@
         &__item
             &:first-child
                 margin-bottom: 20px
+
+@media screen and (max-width: 768px)
+    .deals
+        background: url("../assets//deals/deals-mobile-bg.png") no-repeat
+        background-size: 100% 100%
+        background-position-x: center
+        background-position-y: center
+        padding: 120px 0
 @media screen and (max-width: 600px)
     .deals
         &__item
@@ -74,6 +82,7 @@
                 width: 30px
 @media screen and (max-width: 425px)
     .deals
+        padding: 80px 0
         &__slide
             padding: 0 15px 0 0
         &__item
