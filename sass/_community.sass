@@ -54,6 +54,7 @@
         text-transform: uppercase
         margin-bottom: 8px
         color: #FFFFFF
+        z-index: 1
     &__subtitle
         text-align: center
         letter-spacing: 0.255em
@@ -205,13 +206,20 @@
             height: 190px
             left: 0px
             bottom: -80px
+        &__small-coin
+            bottom: 800px
     .calculator
+        &__hero
+            flex-direction: column
         &__resume
-            display: none
+            z-index: 1
+            margin-right: 0
+            margin-bottom: 60px
         &__title
             margin-bottom: 0
     .range
         width: 100%
+        max-width: 550px
         &__text
             margin-bottom: 36px
 
@@ -226,10 +234,11 @@
         &__small-coin
             width: 200px
             height: 190px
-            bottom: 450px
+            bottom: 900px
         &__big-coin
             width: 200px
             height: 190px
+            bottom: -40px
     .calculator
         margin-top: 200px
 @media screen and (max-width: 600px)
@@ -242,6 +251,8 @@
             margin-bottom: -80px
         &__title-br
             display: inline
+        &__small-coin
+            bottom: 800px
     .range
         &__thumb
             &::after
@@ -254,6 +265,15 @@
     .calculator
         &__subtitle
             margin-bottom: 20px
+        &__resume
+            padding: 34px 30px
+            margin-bottom: 30px
+        &__resume-right
+            padding-left: 15px
+        &__resume-row
+            margin-bottom: 24px
+        &__summ
+            font-size: 38px
 
 @media screen and (max-width: 550px)
     .calculator
@@ -263,14 +283,26 @@
             width: 100px
             height: 100px
             right: -40px
-            bottom: 460px
+            bottom: 830px
+            z-index: -1
 @media screen and (max-width: 500px)
     .community
         &__small-coin
             width: 100px
             height: 100px
             right: -40px
-            bottom: 500px
+            bottom: 900px
+@media screen and (max-width: 475px)
+    .calculator
+        &__resume-right
+            font-size: 14px
+@media screen and (max-width: 460px)
+    .calculator
+        &__resume-right
+            display: none
+        &__resume-row
+            margin-bottom: 18px
+
 @media screen and (max-width: 425px)
     .community
         padding-top: 80px
@@ -285,12 +317,21 @@
             left: 0px
             bottom: -60px
         &__small-coin
-            bottom: 430px
+            bottom: 830px
+    .calculator
+        &__resume
+            padding: 28px 24px 24px
+            &-row
+                margin-bottom: 12px
+            &-left
+                flex-basis: 100%
+            &-text
+                font-size: 14px
 
 @media screen and (max-width: 380px)
     .community
         &__small-coin
-            bottom: 450px
+            bottom: 850px
     .range
         &__btn
             padding: 23px 15px
