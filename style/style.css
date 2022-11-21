@@ -1715,6 +1715,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .ceo {
+    padding-top: 50px;
+  }
   .ceo__hero {
     padding-top: 0;
   }
@@ -1729,6 +1732,9 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+  .ceo {
+    padding-top: 30px;
+  }
   .ceo__title {
     font-size: 37px;
   }
