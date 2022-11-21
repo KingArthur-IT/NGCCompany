@@ -6,6 +6,11 @@
     background-position-y: center
     &::before
         content: ''
+        background: -moz-linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
+        background: -webkit-gradient(linear, 270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
+        background: -webkit-linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
+        background: -o-linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
+        background: -ms-linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
         background: linear-gradient(270.03deg, #0F0F0F 5.92%, #131111 50.97%, #171717 95.09%)
         filter: blur(50px)
         position: absolute
@@ -64,6 +69,8 @@
 @media screen and (max-width: 600px)
     .start
         padding-top: 120px
+        &::before
+            background-color: #131313
         &__title
             width: 108%
             transform: translateX(-4%)

@@ -1577,6 +1577,9 @@ body {
   .start {
     padding-top: 120px;
   }
+  .start::before {
+    background-color: #131313;
+  }
   .start__title {
     width: 108%;
     -webkit-transform: translateX(-4%);
@@ -1959,6 +1962,7 @@ body {
           align-items: center;
   width: 137px;
   height: 71px;
+  z-index: 1;
 }
 
 .reviews__left-arrow {
@@ -2254,6 +2258,9 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+  .telegram::before {
+    background-color: #131313;
+  }
   .telegram__mobile-item-wrap.small {
     width: 150px;
     height: 150px;
